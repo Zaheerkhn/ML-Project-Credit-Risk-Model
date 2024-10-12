@@ -31,14 +31,14 @@ with row2_col3:
 with row3_col1:
     number_of_open_accounts = st.number_input('Number of Open Accounts', min_value=0, max_value=50, value=0)
 with row3_col2:
-    credit_utilization_ratio = st.number_input('Credit Utilization Ratio (%)', min_value=1, max_value=100, value=1)
+    credit_utilization_ratio = st.number_input('Credit Utilization Ratio', min_value=1, max_value=100, value=1)
 with row3_col3:
     loan_purpose = st.selectbox('Loan Purpose', ['Education', 'Home', 'Auto', 'Personal'])
 
 with row4_col1:
     loan_type = st.selectbox('Loan Type', ['Secured', 'Unsecured'])
 with row4_col2:
-    del_months_to_loan_months = st.number_input('Delinquency Months to Loan Months', min_value=0, max_value=100, step=1, value=30)
+    del_months_to_loan_months = st.number_input('Delinquency Ratio', min_value=0, max_value=100, step=1, value=30)
 with row4_col3:
     avg_dpd_per_delinquency = st.number_input('Average DPD per Delinquency', min_value=0, value=20)
 
